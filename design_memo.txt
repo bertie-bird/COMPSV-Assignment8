@@ -1,0 +1,23 @@
+Why is a hash table the right structure for fast lookups?
+Hash tables are ideal for looking up values quickly by
+unique keys and this can happen by the data structure
+associating keys with designated values. It's the right fit
+because lookup is nearly done in an instant no matter the size
+of the dictionary created, a comparing example of a slower
+example would be if this information was stored in a list. A loop
+would be required in order to find the desired value.
+
+How did you handle collisions?
+I used the technique of seperate chaining to handle collisions.
+Collisions occur when two different vaules produce the same index. 
+In order to combat this within the index of a hash table there is a linked list
+instead of single values. This allows for duplicates to be stored in
+the same index. 
+
+When might an engineer choose a hash table over a list or tree?
+An enginner might decide to choose a hash table instead of a list or tree
+because the program that they are coding requires a data structure that needs
+a fast lookup speed by using a unique key with no concern about it maintaining order and
+duplicates aren't a priority. Lists are more useful for programs that need to
+maintain order and is a better fit for duplicates. Trees also have
+a moderate lookup speed however, there is a need to maintain order.
